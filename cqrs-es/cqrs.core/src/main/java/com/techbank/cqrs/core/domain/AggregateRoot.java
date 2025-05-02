@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 public abstract class AggregateRoot {
-    protected String id;
+    public String id;
     private int version = -1;
 
     private final Logger logger = Logger.getLogger(AggregateRoot.class.getName());
@@ -24,7 +24,7 @@ public abstract class AggregateRoot {
     private final List<BaseEvent> changes = new ArrayList<>();
 
 
-    private String getId(){
+    public String getId(){
         return id;
     }
 

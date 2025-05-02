@@ -13,6 +13,13 @@ import java.util.Date;
 @NoArgsConstructor
 public class AccountAggregate extends AggregateRoot {
     private Boolean active;
+
+    public double getBalance() {
+        return balance;
+    }
+
+
+
     private double balance;
 
     public AccountAggregate(OpenAccountCommand command) {
